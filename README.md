@@ -5,6 +5,7 @@ A from-scratch implementation of JPEG-style image compression in Python.
 ## Pipeline
 
 Image → RGB→Y → Pad → DCT → Quantize → Zigzag → RLE → Huffman → .bin
+
 .bin  → Huffman decode → de-zigzag → Dequantize → IDCT → Crop → Image
 
 ## Usage
